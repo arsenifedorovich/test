@@ -181,11 +181,7 @@ int main() {
     if (ball.getPosition().y > paddle.getPosition().y) {
       win.close();
     }
-    //условие колллизии надо написать а не эту фигню
-    //      if (ball.getPosition().y > paddle.getPosition().y - KBallDiameter &&
-    //          ball.getPosition().x + KBallDiameter < paddle.getPosition().x +
-    //          KPaddleLength && ball.getPosition().x > paddle.getPosition().x)
-    //          {
+
     if (IsCollision(ball_obj, paddle_obj)) {
       ball_move.y *= -1;
       ball.setPosition(
